@@ -22,34 +22,21 @@ function init500px(cb){
 }
 
 function fetchFlow(){
-    //Use the 500px API to fetch images
-    // _500px.api('/photos', { feature: 'popular', page: 1, rpp: 40, image_size: 3 }, function (response) {
-    //     console.log(response.data.photos);
-    //     //Loop through all photos and append each one to the flow container element
-    //     response.data.photos.forEach(function(element){
-    //         var img = $("<img>");
-    //         img.prop("src", element.image_url);
-    //         img.addClass("thumbnail");
-
-    //         img.click(function(){
-    //             image_page.id = element.id;
-    //             $.mobile.changePage("image.html");
-    //         })
-
-    //         $(".flow_container").append(img);
-    //     })        
-    // });
-
-    // var key = "UBTP38hDiytkoDnEI9O3KQCVHUvs09uUrqJOHXgk"
-
-    // $.getJSON("https://api.500px.com/v1/photos", {feature: "popular", consumer_key: key}, function(response){
-    //     console.log(response);
-    // })
-
-    $.get("http://500px.com", function(response){
-        console.log(response);
-    })
-
+    // Use the 500px API to fetch images
+    _500px.api('/photos', { feature: 'popular', page: 1, rpp: 40, image_size: 3 }, function (response) {
+        console.log(response.data.photos);
+        //Loop through all photos and append each one to the flow container element
+        response.data.photos.forEach(function(element){
+            var img = $("<img>");
+            img.prop("src", element.image_url);
+            img.addClass("thumbnail");
+            img.click(function(){
+                image_page.id = element.id;
+                $.mobile.changePage("image.html");
+            });
+            $(".flow_container").append(img);
+        })        
+    });
 }
 
 $(document).on("click", "#search_button", function(e){
