@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <script src="js/500px.js"></script>
+        <script src="js/index.js"></script>
+        <title>500px Viewer</title>
+    </head>
+    <body>
+
+    <!-- Page conatiner element-->
+        <div data-role="page" id="flow_page">
+            <div data-role="header">
+                <a href="#nav_panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+                <h2>Flow</h2>
+            </div>
+
+            <div role="main" class="ui-content">
+                <div class="flow_container"></div>
+            </div>
+        </div><!-- End Flow Page -->
+
+        <!-- Panel -->
+        <div id="nav_panel" data-role="panel" data-display="push" data-position="left">
+            <ul data-role="listview" data-theme="a" id="nav">
+                <li><a href="#search_popup" data-rel="popup" data-position-to="window" class="ui-icon-search">Search</a></li>
+            </ul>
+        </div><!-- End Panel -->
+
+        <!-- Search Popup -->
+        <div id="search_popup" data-theme="a" class="ui-corner-all ui-content">
+            <form>
+                <h3>Search</h3>
+                <input type="text" name="search_term" id="search_term" placeholder="Search Term">
+                <button id="search_button" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Find Pics</button>
+            </form>
+        </div><!-- End Popup -->
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+a[href='#nav_panel']{
+    border-radius: 3px !important;
+    width:40px;
+}
+
+.flow_container{
+    text-align: center;
+}
+
+#search_page{
+    text-align: center;
+}
+
+.search_results_container{
+    text-align: center;
+}
+
+.thumbnail{
+    width: 80px;
+    height: 80px;
+    margin-left: 3px;
+    margin-right:3px;
+    margin-bottom: 1px;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#full_screen_img{
+    max-width: 100%;
+    max-height:100%;
+}
